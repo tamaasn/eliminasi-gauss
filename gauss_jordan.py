@@ -17,15 +17,14 @@ def gauss_jordan_elimination(matrix, n):
     solution = [row[n] for row in matrix]
 
     return solution
-if __name__ == "__main__":
-    matrix = [
-        [2, 1, -1, 8],
-        [-3, -1, 2, -11],
-        [-2, 1, 2, -3]
-    ]
+matrix = [
+    [2, 1, -1, 8],
+    [-3, -1, 2, -11],
+    [-2, 1, 2, -3]
+]
 
-    n = len(matrix)
-    solution = gauss_jordan_elimination(matrix, n)
-    variables = ["x" , "y" , "z"]
-    for i, val in enumerate(solution):
-    	print("{} : {}".format(variables[i] , val))
+n = len(matrix)
+solution = gauss_jordan_elimination(matrix, n)
+variables = ["x" , "y" , "z"]
+for i, val in enumerate(solution):
+    print("{} : {}".format(variables[i] , val))
