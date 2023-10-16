@@ -12,7 +12,6 @@ def seidel(a, x ,b):
         x[j] = d / a[j][j]        
     return x
 
-print("Implementasi gauss seidel\nMuhammad Akmal Sani Pratama\nNIM : 23106050036")
 x = [0, 0, 0]                         
 a = [[4.0, 1.0, 2.0],[6.0, 5.0, 1.0],[1.0, 1.0, 3.0]] 
 b = [4.0,7.0,3.0]
